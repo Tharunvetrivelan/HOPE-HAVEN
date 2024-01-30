@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Director</title>
+  <style>
+    
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden; /* Prevent scrollbars from appearing */
+    }
+
+    .video-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: -1;
+    }
+
+    video {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+.button-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;  /* Optional for vertical centering */
+  height: 70vh;
+  
+}
+
+    .button {
+      font-size: 30px;
+      padding: 30px 200px;
+      background: lightslategrey; /* Button color */
+      color: black;
+      border:whitesmoke;
+      cursor:pointer;
+      transition: background 0.3s ease, box-shadow 0.3s ease;
+      justify-content: center;
+    }
+
+    .button:hover {
+      background: whitesmoke; /* Button color on hover */
+      box-shadow: 0 0 5px whitesmoke, 0 0 25px whitesmoke, 0 0 50px rgb(211, 211, 211), 0 0 200px rgb(211, 211, 211);
+    }
+  </style>
+</head>
+<body>
+    <center><h1 style="color: white;">Ready to be a part of our family?</h1></center>
+    <center><h3 style="color: white;">New here or signing up, we're excited to welcome you to our Hope Haven community</h3></center>
+    <div class="video-container">
+        <video autoplay muted loop>
+          <source src="images/bg vid.mp4" type="video/mp4"> <!-- Replace 'your-background-video.mp4' with your video URL -->
+        </video>
+      </div>
+  <div class="button-container">
+    <button class="button" id="loginBtn" ><a href="ulogin.html" style="text-decoration: none; color: inherit;">LOGIN</a></button>
+<button class="button" id="signupBtn" ><a href="usignup.html" style="text-decoration: none; color: inherit;">SIGN UP</a></button>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>HOPE HAVEN</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script
+  type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+></script>
+<script type="text/javascript">
+  (function () {
+    emailjs.init("UU9Nt_QZjLXFg-_SB");
+  })();
+</script>
+  <script type="text/javascript">
+    function sendEmail() {
+      
+        console.log("hello");
+        
+        var params={
+         name : document.getElementById("name").value,
+         email : document.getElementById("email").value,
+         phone : document.getElementById("phone").value,
+         message : document.getElementById("message").value,
+        };
+        const serviceID="service_ocfdzxs";
+        const templateID="template_dwqk3f8";
+
+        emailjs.send(serviceID, templateID, params)
+    .then(res=>{
+        document.getElementById("name").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("phone").value = "";
+        document.getElementById("message").value = "";
+        console.log(res);
+        alert("Your message sent successfully!!")
+
+    })
+    .catch(err=>console.log(err));
+
+
+
+        // // You can customize the email body as needed
+        // var emailBody = "Name: " + name + "\nEmail: " + email + "\nPhone: " + phone + "\n\nMessage:\n" + message;
+    //     Email.send({
+        
+    //     SecureToken : "28e6c17b-20c5-4abc-a238-9fe1c836328f",
+    //     To : 'tharunvetrivelan@gmail.com',
+    //     From : "hopehaven02@gmail.com",
+    //     Subject : "This is the subject",
+    //     Body : "And this is the body"
+    // }).then(function (message) {
+    //       alert(message);
+    //     });
+        // Email.send({
+        //   Host: "smtp.hostinger.com",     //smtp.gmail.com
+        //   Username: "contact@dreamdart.io",
+        //   Password: "Hello105@",
+        //   To: 'tharunvetrivelan@gmail.com',
+        //   From: "contact@dreamdart.io",
+        //   Subject: "Sending Email using javascript",
+        //   Body: "Well that was easy!!",
+        //   })
+        
+
+        // Encode special characters in the email body
+        // emailBody = encodeURIComponent(emailBody);
+
+        // Create mailto link
+        //var mailtoLink = "mailto:recipient@example.com?subject=Contact%20Form&body=" + emailBody;
+
+        // Create an anchor element
+        //var mailtoAnchor = document.createElement("a");
+
+        // Set the href attribute of the anchor to the mailto link
+        //mailtoAnchor.href = mailtoLink;
+
+        // Trigger a click event on the anchor element to open the user's default email client
+        //mailtoAnchor.click();
+    }
+</script>
+
+</head>
+
+<body class="sub_page">
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              HOPE HAVEN
+            </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav  ">
+                <li class="nav-item ">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link" href="why.html"> Why us </a>
+                </li>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="trainer.html"> devs</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="contact.html"> Contact Us</a>
+                </li>
+              </ul>
+              <div class="user_option">
+                <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
+                  <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+
+  </div>
+
+
+  <!-- contact section -->
+
+  <section class="contact_section ">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6 px-0">
+          <div class="img-box">
+            <img src="images/contact-img.jpg" alt="">
+          </div>
+        </div>
+        <div class="col-lg-5 col-md-6">
+          <div class="form_container pr-0 pr-lg-5 mr-0 mr-lg-2">
+            <div class="heading_container">
+              <h2>
+                Contact Us
+              </h2>
+            </div>
+            <form id="contactForm" method="post" action="DemoServlet">
+              <div>
+                  <input type="text" id="name" placeholder="Name" name="name" required />
+              </div>
+              <div>
+                  <input type="tel" id="phone" placeholder="Phone Number" name="phone" required/>
+              </div>
+              <div>
+                  <input type="email" id="email" placeholder="Email" name="email" required />
+              </div>
+              
+              <div> 
+        <input id="message" type="text" class="message-box" placeholder="Message" name="message" required/>	
+              </div>
+              <div class="d-flex">
+                  <button type="submit">Send</button>
+                  
+              </div>
+          </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end contact section -->
+
+  <!-- info se <img src="" alt="">
+            </div>
+            <div class="detail-box">
+           ction -->
+  <section class="info_section layout_padding2">
+    <div class="container">
+      <div class="info_items">
+        <a href="">
+          <div class="item ">
+            <div class="img-box box-1">
+              <img src="" alt="">
+            </div>
+            <div class="detail-box">
+              <p>
+                Location
+              </p>
+            </div>
+          </div>
+        </a>
+        <a href="">
+          <div class="item ">
+            <div class="img-box box-2">
+              <img src="" alt="">
+            </div>
+            <div class="detail-box">
+              <p>
+                +91 6381250805
+              </p>
+            </div>
+          </div>
+        </a>
+        <a href="">
+          <div class="item ">
+            <div class="img-box box-3">
+              <img src="" alt="">
+            </div>
+            <div class="detail-box">
+              <p>
+                demo@gmail.com
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- end info_section -->
+  <!-- footer section -->
+  <footer class="container-fluid footer_section">
+    <p>
+      &copy; 2023 All Rights Reserved. Design by
+      <a href="https://www.linkedin.com/in/tharunvetrivelan-s-2000b71a5/">THARUN VELAN</a>
+    </p>
+  </footer>
+  <!-- footer section -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+</body>
+</html>
